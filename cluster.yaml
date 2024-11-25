@@ -1,0 +1,11 @@
+kind: cluster 
+apiversion: v1
+metadata:
+ name: expense 
+ environment: dev
+ region: us-east-1
+managedNodeGroups:
+- name: expense
+  instanceType: m5.large
+  desriredCapacity: 3
+  spot: true
