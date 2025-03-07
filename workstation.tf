@@ -4,9 +4,10 @@ source  = "terraform-aws-modules/ec2-instance/aws"
 ami = data.aws_ami.ami_info.id
 vpc_security_group_ids = [aws_security_group.sg.id]
 instance_type= "t3.micro"
-user_data = file ("workstation.sh")
+user_data = file("workstation.sh")
+
 tags = {
-    name ="workstation"
+    Name ="workstation"
 }
 
 }
