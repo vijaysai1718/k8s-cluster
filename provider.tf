@@ -1,13 +1,13 @@
 terraform {
   required_providers {
     aws={
-        source = "haishcrop/aws"
+        source = "hashicorp/aws"
         version = "5.48.0"
     }
   }
  backend "s3" {
     bucket = "vijay-remote-state"
-    key    = "expense-vpc"
+    key    = "cluster"
     region = "us-east-1"
     dynamodb_table = "vijay-remotestate-lock"
   }
