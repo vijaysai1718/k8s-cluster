@@ -5,8 +5,8 @@ metadata:
   region: us-east-1
 managedNodeGroups:
  - name: expense
-   desiredCapacity: 3
-   instanceType: "t3.micro"
+   desiredCapacity: 1
+   instanceType: "t3.large"
    spot: true
 
 
